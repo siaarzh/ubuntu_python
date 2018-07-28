@@ -2,7 +2,9 @@
 # https://github.com/docker-library/python/blob/master/3.6/jessie/Dockerfile
 
 FROM ubuntu:16.04
-MAINTAINER Serzhan Akhmetov <serzhan.akhmetov@gmail.com>
+
+LABEL maintainer="Serzhan Akhmetov <serzhan.akhmetov@gmail.com>"
+LABEL version="3.6.6"
 
 RUN apt-get -qq update && \
     apt-get -y dist-upgrade && \
